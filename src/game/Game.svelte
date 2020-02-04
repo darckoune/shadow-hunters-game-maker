@@ -1,5 +1,7 @@
 <script>
     import PlayersList from './components/PlayersList.svelte';
+    import Card from '../display/Card.svelte';
+
     import Peer from 'peerjs';
     import { afterUpdate } from 'svelte';
 
@@ -11,6 +13,7 @@
     let requestedName;
 
     let players = [];
+    let card = null;
 
     const peer = new Peer();
 
@@ -39,6 +42,9 @@
             console.log('data received', data);
             if (data.type === 'players') {
                 players = data.data;
+            }
+            if (data.type === 'card') {
+                card = data.data;
             }
         });
     }
@@ -74,4 +80,8 @@
         <PlayersList {players} />
     </div>
 </div>   
+{/if}
+
+{#if card}
+    <Card {card} />
 {/if}

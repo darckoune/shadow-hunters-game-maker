@@ -30,8 +30,19 @@
 
     function submit() {
         dispatch('gameCreated', {
-            shadowHunters: shadowHunters
+            shadowHunters: shadowHunters,
+            cards: playableCards
         });
+    }
+
+    function toggleCard(card) {
+        if (playableCards.findIndex(c => c.name === card.name) > -1) {
+            playableCards.splice(playableCards.findIndex(c => c.name === card.name), 1);
+            playableCards = [...playableCards];
+        } else {
+            playableCards = [...playableCards, card];
+        };
+        console.log(playableCards);
     }
 </script>
 
@@ -43,6 +54,10 @@
     .medium-card {
         width: 300px;
         display: inline-block;
+    }
+
+    .removed-card {
+        opacity: 0.6;
     }
 </style>
 
@@ -68,8 +83,11 @@
     <h2>Liste des personnages</h2>
 
     {#each cards as card}
-        <div class="medium-card">
-            <Card {card} />
+        <div 
+            class="medium-card" 
+            on:click={() => toggleCard(card)}
+            class:removed-card={playableCards.findIndex(c => c.name === card.name) === -1}>
+            <Card {card}/>
         </div>
     {/each}
 </form>

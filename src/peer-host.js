@@ -8,11 +8,6 @@ export class PeerHost {
         this.connections = [];
         this.players = [];
         this.players$ = new BehaviorSubject(this.players);
-        this.cards = [];
-        cardsStore.subscribe(c => {
-            this.cards = c;
-            console.log('cards !', this.cards);
-        })
     }
 
     start() {
@@ -27,7 +22,8 @@ export class PeerHost {
                 this.players.push({
                     peerId: conn.peer,
                     playerId: this.players.length ? Math.max(...this.players.map(p  => p.playerId)) + 1 : 1,
-                    name: 'No name'
+                    name: 'No name',
+                    card: null
                 });
                 console.log('players', this.players);
                 conn.on('data', (data) => {
@@ -48,6 +44,47 @@ export class PeerHost {
 
     startGame(gameConfig) {
         console.log('should start game with', gameConfig);
+        const cards = gameConfig.cards;
+        const shuffledPlayers = this.shuffleArray(this.players);
+
+        const shadows = shuffledPlayers.slice(0, gameConfig.shadowHunters);
+        const hunters = shuffledPlayers.slice(gameConfig.shadowHunters, gameConfig.shadowHunters * 2);
+        const neutrals = shuffledPlayers.slice(gameConfig.shadowHunters * 2);
+
+        console.log(shadows, hunters, neutrals);
+
+        const shadowCards = this.shuffleArray(cards.filter(c => c.team === 'shadow'));
+        const hunterCards = this.shuffleArray(cards.filter(c => c.team === 'hunter'));
+        const neutralCards = this.shuffleArray(cards.filter(c => c.team === 'neutral'));
+
+        shadows.forEach((player, index) => {
+            player.card = shadowCards[index];
+        });
+        hunters.forEach((player, index) => {
+            player.card = hunterCards[index];
+        });
+        neutrals.forEach((player, index) => {
+            player.card = neutralCards[index];
+        });
+
+        this.players.forEach(player => {
+            const conn = this.getConnectionFromPlayer(player);
+            conn.send({
+                type: 'card',
+                data: player.card
+            });
+        })
+
+        console.log('players', this.players);
+    }
+
+    shuffleArray(array) {
+        const a = [...array];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
     }
 
     resetGame() {
@@ -113,6 +150,10 @@ export class PeerHost {
 
     getPlayerFromConnection(conn) {
         return this.players.find(p => p.peerId === conn.peer);
+    }
+
+    getConnectionFromPlayer(player) {
+        return this.connections.find(c => player.peerId === c.peer);
     }
 
     playerCount() {
