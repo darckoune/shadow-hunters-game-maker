@@ -98,5 +98,10 @@
         "name": "David",
         "team": "neutral",
         "image": "david.png" 
+    },
+    {
+        "name": "Béatrice",
+        "team": "neutral",
+        "image": "beatrice.png" 
     }
 ]

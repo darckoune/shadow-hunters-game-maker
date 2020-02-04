@@ -1,7 +1,7 @@
 <script>
-    export let src = '';
+    export let card = null;
 
-    let realSrc = src
+    let realSrc = card.image;
 
     function onError() {
         if (realSrc != 'default.png') {
@@ -11,27 +11,29 @@
 </script>
 
 <style>
-    .card-container {
-        width: 198px;
-        height: 281px;
-        display: inline-block;
+    .aspect-ratio-box {
+        height: 0;
+        overflow: hidden;
+        padding-top: calc(1406 / 991 * 100%);
+        position: relative;
+    }
+
+    .aspect-ratio-box-inside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     img {
         width: 100%;
         height: 100%;
     }
-
-    img:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 198px;
-        height: 281px;
-        background-image: url(cards/images/default.png);
-    }
 </style>
 
-<div class="card-container">
-    <img src={'cards/images/' + realSrc} alt="card" on:error={onError} />
+<div class="aspect-ratio-box">
+    <div class="aspect-ratio-box-inside">
+        <img src={'cards/images/' + realSrc} alt="card" on:error={onError} />
+    </div>
 </div>

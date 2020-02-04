@@ -39,6 +39,11 @@
     .inline {
         display: inline-block;
     }
+
+    .medium-card {
+        width: 300px;
+        display: inline-block;
+    }
 </style>
 
 <p>Nombre de joueurs : {players.length}</p>
@@ -63,6 +68,8 @@
     <h2>Liste des personnages</h2>
 
     {#each cards as card}
-        <Card src={card.image} />
+        <div class="medium-card">
+            <Card {card} />
+        </div>
     {/each}
 </form>
