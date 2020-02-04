@@ -24,6 +24,10 @@
         host.resetGame();
     }
 
+    function onGameCreated(event) {
+        host.startGame(event.detail)
+    }
+
     $: sharableLink = window.location.origin + '/' + hostId;
 </script>
 
@@ -34,6 +38,5 @@
 {:else}
     <button on:click={restartGame}>Restart the game</button>
     <p>Share this link to the players : <a href={sharableLink} target="_blank">{sharableLink}</a></p>
-
-    <GameCreationForm {players} />
+    <GameCreationForm {players} on:gameCreated={onGameCreated}/>
 {/if}

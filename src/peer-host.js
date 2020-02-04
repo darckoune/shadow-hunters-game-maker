@@ -1,5 +1,6 @@
 import Peer from 'peerjs';
 import { BehaviorSubject } from 'rxjs';
+import { cards } from './cards-store';
 
 export class PeerHost {
     constructor() {
@@ -7,7 +8,11 @@ export class PeerHost {
         this.connections = [];
         this.players = [];
         this.players$ = new BehaviorSubject(this.players);
-        this.createGame();
+        this.cards = [];
+        cards.subscribe(c => {
+            this.cards = c;
+            console.log('cards !', this.cards);
+        })
     }
 
     start() {
@@ -41,8 +46,8 @@ export class PeerHost {
         });
     }
 
-    createGame() {
-        
+    startGame(gameConfig) {
+        console.log('should start game with', gameConfig);
     }
 
     resetGame() {

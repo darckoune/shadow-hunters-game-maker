@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Emi",
+        "team": "hunter",
+        "image": "emi.png" 
+    },
+    {
+        "name": "Ellen",
+        "team": "hunter",
+        "image": "ellen.png" 
+    },
+    {
+        "name": "Franklin",
+        "team": "hunter",
+        "image": "franklin.png" 
+    },
+    {
+        "name": "Fu-ka",
+        "team": "hunter",
+        "image": "fu-ka.png" 
+    },
+    {
+        "name": "Georges",
+        "team": "hunter",
+        "image": "georges.png" 
+    },
+    {
+        "name": "Gregor",
+        "team": "hunter",
+        "image": "gregor.png" 
+    },
+    {
+        "name": "Metamorphe",
+        "team": "shadow",
+        "image": "metamorphe.png" 
+    },
+    {
+        "name": "Momie",
+        "team": "shadow",
+        "image": "momie.png" 
+    },
+    {
+        "name": "Vampire",
+        "team": "shadow",
+        "image": "vampire.png" 
+    },
+    {
+        "name": "Valkyrie",
+        "team": "shadow",
+        "image": "valkyrie.png" 
+    },
+    {
+        "name": "Loup garou",
+        "team": "shadow",
+        "image": "loup-garou.png" 
+    },
+    {
+        "name": "Liche",
+        "team": "shadow",
+        "image": "liche.png" 
+    },
+    {
+        "name": "Allie",
+        "team": "neutral",
+        "image": "allie.png" 
+    },
+    {
+        "name": "Agnès",
+        "team": "neutral",
+        "image": "agnes.png" 
+    },
+    {
+        "name": "Bob",
+        "team": "neutral",
+        "image": "bob.png" 
+    },
+    {
+        "name": "Bryan",
+        "team": "neutral",
+        "image": "bryan.png" 
+    },
+    {
+        "name": "Charles",
+        "team": "neutral",
+        "image": "charles.png" 
+    },
+    {
+        "name": "Catherine",
+        "team": "neutral",
+        "image": "catherine.png" 
+    },
+    {
+        "name": "Daniel",
+        "team": "neutral",
+        "image": "daniel.png" 
+    },
+    {
+        "name": "David",
+        "team": "neutral",
+        "image": "david.png" 
+    }
+]
