@@ -15,17 +15,12 @@
 	.container {
 		height: 100%;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		overflow: auto;
 	}
 	.container div {
 		padding: 10px;
 	}
 	.game-section {
 		flex: 1;
-		display: flex;
-		flex-direction: column;
 	}
 </style>
 

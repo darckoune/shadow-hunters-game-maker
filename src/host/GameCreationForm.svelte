@@ -1,11 +1,20 @@
 <script>
     import { createEventDispatcher } from 'svelte';
+    import { cardsStore } from '../cards-store';
+    import Card from '../display/Card.svelte';
     export let players = [];
 
     const dispatch = createEventDispatcher();
     
     let shadowHunters;
     let shadowHuntersChoices;
+    let cards = [];
+    let playableCards = [];
+
+    cardsStore.subscribe(c => {
+        cards = c;
+        playableCards = [...cards];
+    });
     
     $: neutrals = players.length - shadowHunters * 2;
 
@@ -50,4 +59,10 @@
     </div>
 
     <button type="button" on:click={submit}>Start game !</button>
+
+    <h2>Liste des personnages</h2>
+
+    {#each cards as card}
+        <Card src={card.image} />
+    {/each}
 </form>
