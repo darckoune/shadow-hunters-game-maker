@@ -16,6 +16,7 @@ export class PeerHost {
                 resolve(id);
             });
             this.peer.on('connection', (conn) => {
+                console.log('new conn');
                 this.connections.push(conn);
                 this.players.push({
                     peerId: conn.peer,
@@ -66,15 +67,10 @@ export class PeerHost {
         const player = this.getPlayerFromConnection(conn);
         if (!player) return;
         switch (action) {
-            // case 'play':
-            //     if (player.playerId !== this.gameState.playerTurn) return;
-            //     this.gameState.grid.get({ x: data.x, y: data.y }).playerPiece = player.playerId;
-            //     if (this.checkVictory(player)) {
-            //         this.gameState.win = player.playerId;
-            //     }
-            //     this.gameState.playerTurn = (this.gameState.playerTurn % this.playerCount()) + 1
-            //     this.broadcastGameState();
-            //     break;
+            case 'name':
+                player.name = data.name;
+                this.broadcastPlayers();
+                break;
             default:
                 console.error('Unable to handle action: ' + action);
                 break;

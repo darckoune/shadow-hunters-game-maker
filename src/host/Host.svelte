@@ -1,12 +1,17 @@
 <script>
     import { PeerHost } from '../peer-host';
+    import { createEventDispatcher } from 'svelte';
 
+    const dispatch = createEventDispatcher();
     const host = new PeerHost();
     let hostId;
 
 
     function createGameHost() {
-        host.start().then(id => hostId = id);
+        host.start().then(id => { 
+            hostId = id;
+            dispatch('createdHost', id);
+        });
     }
 
     function restartGame() {

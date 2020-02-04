@@ -2,7 +2,13 @@
 	import Host from './host/Host.svelte';
 	import Game from './game/Game.svelte';
 
-	const gameId = window.location.pathname ? window.location.pathname.substr(1) : null;
+	let hostId = window.location.pathname ? window.location.pathname.substr(1) : null;
+	let gameCreator = false;
+
+	function onCreatedHost(ev) {
+		gameCreator = true;
+		hostId = ev.detail;
+	}
 </script>
 
 <style>
@@ -24,13 +30,15 @@
 </style>
 
 <div class="container">
-	{#if !gameId}
+	{#if !hostId || gameCreator}
 		<div class="host-section">
-			<Host/>
+			<Host on:createdHost={onCreatedHost}/>
 		</div>
 	{/if}
 	
-	<div class="game-section">
-		<Game/>
-	</div>
+	{#if hostId}
+		<div class="game-section">
+			<Game hostId={hostId}/>
+		</div>
+	{/if}
 </div>

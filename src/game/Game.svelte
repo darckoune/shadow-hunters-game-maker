@@ -1,12 +1,14 @@
 <script>
     import PlayersList from './components/PlayersList.svelte';
     import Peer from 'peerjs';
+    import { afterUpdate } from 'svelte';
+
+    export let hostId;
 
     let connectionToHost = null;
     let connectedToHostId = null;
-    let hostId = null;
+    let requestedName;
 
-    let gameState = null;
     let players = [];
 
     const peer = new Peer();
@@ -18,11 +20,16 @@
     }, false);
 
     function connect() {
+        console.log('connecting using hostId', hostId);
         connectionToHost = peer.connect(hostId);
         connectionToHost.on('open', () => {
+            console.log('connected');
             connectedToHostId = hostId;
             connectionToHost.send({
-                request: 'state'
+                action: 'name',
+                data: {
+                    name: requestedName
+                }
             });
             connectionToHost.send({
                 request: 'players'
@@ -30,21 +37,8 @@
         });
         connectionToHost.on('data', (data) => {
             console.log('data received', data);
-            if (data.type === 'state') {
-                gameState = data.data;
-            } else if (data.type === 'players') {
+            if (data.type === 'players') {
                 players = data.data;
-            }
-        });
-    }
-
-    function sendPlayAction(event) {
-        if (!connectionToHost) return;
-        connectionToHost.send({
-            action: 'play',
-            data: {
-                x: event.detail.x,
-                y: event.detail.y
             }
         });
     }
@@ -63,16 +57,18 @@
 
 <h1>Game</h1>
 
+{#if !connectedToHostId}
 <div>
-    <input bind:value={hostId}>
+    <input bind:value={requestedName}>
     <button 
         on:click={connect} 
-        disabled={hostId === connectedToHostId}>
-        Connect
+        disabled={connectedToHostId}>
+        Pick a name
     </button>
 </div>
+{/if}
 
-{#if connectionToHost || !connectionToHost}
+{#if connectedToHostId}
 <div class="horizontal-flex">
     <div class="flex-1">
         <PlayersList {players} />
