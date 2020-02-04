@@ -1,11 +1,12 @@
 import Peer from 'peerjs';
-import { } from './constants';
+import { BehaviorSubject } from 'rxjs';
 
 export class PeerHost {
     constructor() {
         this.peer = null;
         this.connections = [];
         this.players = [];
+        this.players$ = new BehaviorSubject(this.players);
         this.createGame();
     }
 
@@ -20,9 +21,10 @@ export class PeerHost {
                 this.connections.push(conn);
                 this.players.push({
                     peerId: conn.peer,
-                    playerId: this.players.length ? Math.max(this.players.map(p  => p.playerId)) + 1 : 1,
+                    playerId: this.players.length ? Math.max(...this.players.map(p  => p.playerId)) + 1 : 1,
                     name: 'No name'
                 });
+                console.log('players', this.players);
                 conn.on('data', (data) => {
                     if (data.request) {
                         this.handleRequest(conn, data.request);
@@ -35,7 +37,6 @@ export class PeerHost {
                     this.players.splice(this.players.indexOf(this.getPlayerFromConnection(conn)), 1);
                     this.broadcastPlayers();
                 });
-                this.broadcastPlayers();
             });
         });
     }
@@ -93,6 +94,7 @@ export class PeerHost {
                 data: this.getSendablePlayers()
             })
         })
+        this.players$.next(this.players);
     }
 
     getSendablePlayers() {

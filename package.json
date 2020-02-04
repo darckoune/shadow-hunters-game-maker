@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "peerjs": "^1.1.0",
+    "rxjs": "^6.5.4",
     "sirv-cli": "^0.4.4"
   },
   "scripts": {

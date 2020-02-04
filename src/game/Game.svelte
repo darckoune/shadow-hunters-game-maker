@@ -7,6 +7,7 @@
 
     let connectionToHost = null;
     let connectedToHostId = null;
+    let connecting = false;
     let requestedName;
 
     let players = [];
@@ -20,10 +21,9 @@
     }, false);
 
     function connect() {
-        console.log('connecting using hostId', hostId);
+        connecting = true;
         connectionToHost = peer.connect(hostId);
         connectionToHost.on('open', () => {
-            console.log('connected');
             connectedToHostId = hostId;
             connectionToHost.send({
                 action: 'name',
@@ -62,7 +62,7 @@
     <input bind:value={requestedName}>
     <button 
         on:click={connect} 
-        disabled={connectedToHostId}>
+        disabled={connecting}>
         Pick a name
     </button>
 </div>

@@ -1,16 +1,22 @@
 <script>
     import { PeerHost } from '../peer-host';
     import { createEventDispatcher } from 'svelte';
+    import GameCreationForm from './GameCreationForm.svelte'
 
     const dispatch = createEventDispatcher();
     const host = new PeerHost();
     let hostId;
+    let players = [];
 
 
     function createGameHost() {
         host.start().then(id => { 
             hostId = id;
             dispatch('createdHost', id);
+        });
+
+        host.players$.subscribe(p => {
+            players = p;
         });
     }
 
@@ -28,4 +34,6 @@
 {:else}
     <button on:click={restartGame}>Restart the game</button>
     <p>Share this link to the players : <a href={sharableLink} target="_blank">{sharableLink}</a></p>
+
+    <GameCreationForm {players} />
 {/if}
