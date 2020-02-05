@@ -2,7 +2,12 @@
 	import Host from './host/Host.svelte';
 	import Game from './game/Game.svelte';
 
-	let hostId = window.location.pathname ? window.location.pathname.substr(1) : null;
+	let hostId = null;
+	if (window.location.search) {
+		const h = window.location.search.split('=')[1]
+		if (h) hostId = h;
+	}
+
 	let gameCreator = false;
 
 	function onCreatedHost(ev) {

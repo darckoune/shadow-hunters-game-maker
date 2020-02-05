@@ -28,7 +28,7 @@
         host.startGame(event.detail)
     }
 
-    $: sharableLink = window.location.origin + '/' + hostId;
+    $: sharableLink = window.location.origin + '/?game=' + hostId;
 </script>
 
 <h1>Host</h1>
