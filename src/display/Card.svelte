@@ -1,7 +1,12 @@
 <script>
     export let card = null;
-
     let hasError = false;
+
+    $: {
+        card;
+        hasError = false;
+    }
+
 </script>
 
 <style>
