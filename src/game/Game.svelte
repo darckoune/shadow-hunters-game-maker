@@ -17,11 +17,11 @@
 
     const peer = new Peer();
 
-    window.addEventListener("beforeunload", function (e) {
-        if (connectionToHost) {
-            connectionToHost.close();
-        }
-    }, false);
+    // window.addEventListener("beforeunload", function (e) {
+    //     if (connectionToHost) {
+    //         connectionToHost.close();
+    //     }
+    // }, false);
 
     function connect() {
         connecting = true;
