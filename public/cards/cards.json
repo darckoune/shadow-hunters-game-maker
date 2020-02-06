@@ -168,5 +168,10 @@
         "name": "Dlanor",
         "team": "neutral",
         "image": "dlanor.png" 
+    },
+    {
+        "name": "Diana",
+        "team": "neutral",
+        "image": "diana.png" 
     }
 ]
