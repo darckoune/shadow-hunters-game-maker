@@ -70,6 +70,11 @@
         "image": "maria.png" 
     },
     {
+        "name": "Masochiste",
+        "team": "shadow",
+        "image": "masochiste.png" 
+    },
+    {
         "name": "Vampire",
         "team": "shadow",
         "image": "vampire.png" 
@@ -133,6 +138,11 @@
         "name": "Béatrice",
         "team": "neutral",
         "image": "beatrice.png" 
+    },
+    {
+        "name": "BB",
+        "team": "neutral",
+        "image": "bb.png"
     },
     {
         "name": "Charles",

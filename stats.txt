@@ -1,0 +1,15 @@
+scores.txt
+
+Geralt : 2:0
+Dlanor: 0:2
+Masochiste : 0:1
+Lonove : 1:1
+Dio : 0:1
+Vouivre : 0:2
+Guts : 1:1
+Beatrice : 0:1
+Fiora : 0:2
+Diana : 1:0
+Eva : 0:1
+Lambdadelta : 1:0
+Alipheese : 1:0

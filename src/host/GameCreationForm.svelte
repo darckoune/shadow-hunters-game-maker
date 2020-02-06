@@ -43,6 +43,7 @@
             playableCards = [...playableCards, card];
         };
         console.log(playableCards);
+        // localStorage.setItem('removedCards', cards.filter(card => playableCards.indexOf(pc => pc.name === card.name) > -1).map(c => c.name));
     }
 </script>
 
