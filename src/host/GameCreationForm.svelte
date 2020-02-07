@@ -13,7 +13,12 @@
 
     cardsStore.subscribe(c => {
         cards = c;
-        playableCards = [...cards];
+        if (!localStorage.getItem('removedCards')) {
+            playableCards = [...cards];
+        } else {
+            const removedCardsNames = JSON.parse(localStorage.getItem('removedCards'));
+            playableCards = cards.filter(card => !removedCardsNames.includes(card.name));
+        }
     });
     
     $: neutrals = players.length - shadowHunters * 2;
@@ -42,8 +47,10 @@
         } else {
             playableCards = [...playableCards, card];
         };
-        console.log(playableCards);
-        // localStorage.setItem('removedCards', cards.filter(card => playableCards.indexOf(pc => pc.name === card.name) > -1).map(c => c.name));
+        localStorage.setItem(
+            'removedCards', 
+            JSON.stringify(cards.map(c => c.name).filter(cardName => !playableCards.map(c => c.name).includes(cardName)))
+        );       
     }
 </script>
 
