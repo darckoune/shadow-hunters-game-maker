@@ -1,6 +1,5 @@
 import Peer from 'peerjs';
 import { BehaviorSubject } from 'rxjs';
-import { cardsStore } from './cards-store';
 
 export class PeerHost {
     constructor() {
@@ -35,8 +34,7 @@ export class PeerHost {
                     }
                 });
                 conn.on('close', () => {
-                    this.players.splice(this.players.indexOf(this.getPlayerFromConnection(conn)), 1);
-                    this.broadcastPlayers();
+                    this.removePlayerUsingConn(conn);
                 });
             });
         });
@@ -114,6 +112,9 @@ export class PeerHost {
                 player.name = data.name;
                 this.broadcastPlayers();
                 break;
+            case 'leave':
+                this.removePlayerUsingConn(conn);
+                break;
             default:
                 console.error('Unable to handle action: ' + action);
                 break;
@@ -158,5 +159,13 @@ export class PeerHost {
 
     playerCount() {
         return this.players.length;
+    }
+
+    removePlayerUsingConn(conn) {
+        if (this.getPlayerFromConnection(conn) && (this.players.indexOf(this.getPlayerFromConnection(conn) > -1))) {
+            this.players.splice(this.players.indexOf(this.getPlayerFromConnection(conn)), 1);
+            conn.close();
+            this.broadcastPlayers();
+        }
     }
 }
