@@ -119,7 +119,7 @@
 
 <h1>
     Shadow Hunters
-    {#if connectedToHostId}
+    {#if connectedToHostId || connecting}
         <button on:click={forceReconnect}>Force reconnect</button>
     {/if}
 </h1>
