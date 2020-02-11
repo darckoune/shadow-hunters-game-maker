@@ -110,6 +110,11 @@
         "image": "lonove.png" 
     },
     {
+        "name": "Lain",
+        "team": "shadow",
+        "image": "lain.png" 
+    },
+    {
         "name": "Allie",
         "team": "neutral",
         "image": "allie.png" 
@@ -123,6 +128,11 @@
         "name": "Alipheese",
         "team": "neutral",
         "image": "alipheese.png" 
+    },
+    {
+        "name": "Akemi Homura",
+        "team": "neutral",
+        "image": "akemi-homura.png" 
     },
     {
         "name": "Bob",
