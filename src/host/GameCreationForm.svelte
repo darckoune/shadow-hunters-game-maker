@@ -10,6 +10,7 @@
     let shadowHuntersChoices;
     let cards = [];
     let playableCards = [];
+    let showCards = true;
 
     cardsStore.subscribe(c => {
         cards = c;
@@ -88,14 +89,16 @@
 
     <button type="button" on:click={submit}>Start game !</button>
 
-    <h2>Liste des personnages</h2>
+    <h2>Liste des personnages <i class="{showCards ? 'gg-chevron-down' : 'gg-chevron-up'}" on:click={() => showCards = !showCards}></i></h2>
 
-    {#each cards as card}
-        <div 
-            class="medium-card" 
-            on:click={() => toggleCard(card)}
-            class:removed-card={playableCards.findIndex(c => c.name === card.name) === -1}>
-            <Card {card}/>
-        </div>
-    {/each}
+    {#if showCards}
+        {#each cards as card}
+            <div 
+                class="medium-card" 
+                on:click={() => toggleCard(card)}
+                class:removed-card={playableCards.findIndex(c => c.name === card.name) === -1}>
+                <Card {card}/>
+            </div>
+        {/each}
+    {/if}
 </form>
