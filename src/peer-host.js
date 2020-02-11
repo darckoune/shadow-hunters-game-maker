@@ -168,4 +168,15 @@ export class PeerHost {
             this.broadcastPlayers();
         }
     }
+
+    removePlayer(player) {
+        if (this.players.indexOf(player) > -1) {
+            this.players.splice(this.players.findIndex(p => p.peerId === player.peerId), 1);
+            const conn = this.getConnectionFromPlayer(player);
+            if (conn) {
+                conn.close();
+            }
+            this.broadcastPlayers();
+        }
+    }
 }
