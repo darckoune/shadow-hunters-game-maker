@@ -35,6 +35,11 @@
         "image": "fiora.png" 
     },
     {
+        "name": "Faye",
+        "team": "hunter",
+        "image": "faye.png" 
+    },
+    {
         "name": "Georges",
         "team": "hunter",
         "image": "georges.png" 
