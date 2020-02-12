@@ -75,6 +75,11 @@
         "image": "masochiste.png" 
     },
     {
+        "name": "Monokuma",
+        "team": "shadow",
+        "image": "monokuma.png" 
+    },
+    {
         "name": "Vampire",
         "team": "shadow",
         "image": "vampire.png" 
@@ -113,6 +118,11 @@
         "name": "Lain",
         "team": "shadow",
         "image": "lain.png" 
+    },
+    {
+        "name": "Lilith",
+        "team": "shadow",
+        "image": "lilith.png" 
     },
     {
         "name": "Allie",
@@ -168,6 +178,11 @@
         "name": "Céleste",
         "team": "neutral",
         "image": "celeste.png" 
+    },
+    {
+        "name": "Claude",
+        "team": "neutral",
+        "image": "claude.png" 
     },
     {
         "name": "Daniel",
