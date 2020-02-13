@@ -1,26 +1,11 @@
 <script>
     import { createEventDispatcher } from 'svelte';
-    import { cardsStore } from '../cards-store';
-    import Card from '../display/Card.svelte';
     export let players = [];
 
     const dispatch = createEventDispatcher();
     
     let shadowHunters;
     let shadowHuntersChoices;
-    let cards = [];
-    let playableCards = [];
-    let showCards = true;
-
-    cardsStore.subscribe(c => {
-        cards = c;
-        if (!localStorage.getItem('removedCards')) {
-            playableCards = [...cards];
-        } else {
-            const removedCardsNames = JSON.parse(localStorage.getItem('removedCards'));
-            playableCards = cards.filter(card => !removedCardsNames.includes(card.name));
-        }
-    });
     
     $: neutrals = players.length - shadowHunters * 2;
 
@@ -36,22 +21,8 @@
 
     function submit() {
         dispatch('gameCreated', {
-            shadowHunters: shadowHunters,
-            cards: playableCards
+            shadowHunters: shadowHunters
         });
-    }
-
-    function toggleCard(card) {
-        if (playableCards.findIndex(c => c.name === card.name) > -1) {
-            playableCards.splice(playableCards.findIndex(c => c.name === card.name), 1);
-            playableCards = [...playableCards];
-        } else {
-            playableCards = [...playableCards, card];
-        };
-        localStorage.setItem(
-            'removedCards', 
-            JSON.stringify(cards.map(c => c.name).filter(cardName => !playableCards.map(c => c.name).includes(cardName)))
-        );       
     }
 </script>
 
@@ -60,45 +31,41 @@
         display: inline-block;
     }
 
-    .medium-card {
-        width: 300px;
-        display: inline-block;
+    .container {
+        margin: 0;
+        padding: 0;
     }
 
-    .removed-card {
-        opacity: 0.6;
+    select {
+        background-color: white;
+    }
+
+    button {
+        width: 100%;
     }
 </style>
 
 <p>Nombre de joueurs : {players.length}</p>
 
 <form>
-    <div>
-        <label class="inline">Shadow & Hunters count</label>
-        <select bind:value={shadowHunters} class="inline">
-            {#each shadowHuntersChoices as choice}
-                <option value={choice}>{choice}</option>
-            {/each}
-        </select>
-    </div>
-
-    <div>
-        <label class="inline">Neutral count</label>
-        <span>{neutrals}</span>
-    </div>
-
-    <button type="button" on:click={submit}>Start game !</button>
-
-    <h2>Liste des personnages <i class="{showCards ? 'gg-chevron-down' : 'gg-chevron-up'}" on:click={() => showCards = !showCards}></i></h2>
-
-    {#if showCards}
-        {#each cards as card}
-            <div 
-                class="medium-card" 
-                on:click={() => toggleCard(card)}
-                class:removed-card={playableCards.findIndex(c => c.name === card.name) === -1}>
-                <Card {card}/>
+    <div class="container">
+        <div class="row">
+            <div class="column column-50">
+                <label class="inline">Nombre de Shadow et Hunters</label>
+                <select bind:value={shadowHunters} class="inline">
+                    {#each shadowHuntersChoices as choice}
+                        <option value={choice}>{choice}</option>
+                    {/each}
+                </select>
             </div>
-        {/each}
-    {/if}
+
+            <div class="column column-50">
+                <label class="inline">Nombre de neutres</label>
+                <select bind:value={neutrals} disabled>
+                    <option value={neutrals}>{neutrals}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="button" on:click={submit}>Start game !</button>
 </form>

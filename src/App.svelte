@@ -9,30 +9,30 @@
 	}
 
 	let gameCreator = false;
-
-	function onCreatedHost(ev) {
-		gameCreator = true;
-		hostId = ev.detail;
-	}
 </script>
 
 <style>
-	.container {
+	.app-container {
 		height: 100%;
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
-	.container div {
+	.app-container div {
 		padding: 10px;
 	}
-	.game-section {
+	
+	.game-section, .host-section {
 		flex: 1;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
 
-<div class="container">
+<div class="app-container">
 	{#if !hostId || gameCreator}
 		<div class="host-section">
-			<Host on:createdHost={onCreatedHost}/>
+			<Host />
 		</div>
 	{/if}
 	
