@@ -1,203 +1,43 @@
 [
     {
-        "name": "Emi",
-        "team": "hunter",
-        "image": "emi.png" 
-    },
-    {
-        "name": "Ellen",
-        "team": "hunter",
-        "image": "ellen.png" 
-    },
-    {
-        "name": "Eva",
-        "team": "hunter",
-        "image": "eva.png" 
-    },
-    {
-        "name": "Elincia",
-        "team": "hunter",
-        "image": "elincia.png" 
-    },
-    {
-        "name": "Emma",
-        "team": "hunter",
-        "image": "emma.png" 
-    },
-    {
-        "name": "Franklin",
-        "team": "hunter",
-        "image": "franklin.png" 
-    },
-    {
-        "name": "Fu-ka",
-        "team": "hunter",
-        "image": "fu-ka.png" 
-    },
-    {
-        "name": "Fiora",
-        "team": "hunter",
-        "image": "fiora.png" 
-    },
-    {
-        "name": "Faye",
-        "team": "hunter",
-        "image": "faye.png" 
-    },
-    {
-        "name": "Fosphophilite",
-        "team": "hunter",
-        "image": "fosphophilite.png" 
-    },
-    {
-        "name": "Georges",
-        "team": "hunter",
-        "image": "georges.png" 
-    },
-    {
-        "name": "Gregor",
-        "team": "hunter",
-        "image": "gregor.png" 
-    },
-    {
-        "name": "Guts",
-        "team": "hunter",
-        "image": "guts.png" 
-    },
-    {
-        "name": "Geralt",
-        "team": "hunter",
-        "image": "geralt.png" 
-    },
-    {
-        "name": "Ginoza",
-        "team": "hunter",
-        "image": "ginoza.png" 
-    },
-    {
-        "name": "Metamorphe",
-        "team": "shadow",
-        "image": "metamorphe.png" 
-    },
-    {
-        "name": "Momie",
-        "team": "shadow",
-        "image": "momie.png" 
-    },
-    {
-        "name": "Maria",
-        "team": "shadow",
-        "image": "maria.png" 
-    },
-    {
-        "name": "Masochiste",
-        "team": "shadow",
-        "image": "masochiste.png" 
-    },
-    {
-        "name": "Monokuma",
-        "team": "shadow",
-        "image": "monokuma.png" 
-    },
-    {
-        "name": "Vampire",
-        "team": "shadow",
-        "image": "vampire.png" 
-    },
-    {
-        "name": "Valkyrie",
-        "team": "shadow",
-        "image": "valkyrie.png" 
-    },
-    {
-        "name": "Vouivre",
-        "team": "shadow",
-        "image": "vouivre.png" 
-    },
-    {
-        "name": "Vanilla Ice",
-        "team": "shadow",
-        "image": "vanilla-ice.png" 
-    },
-    {
-        "name": "Velvet",
-        "team": "shadow",
-        "image": "velvet.png" 
-    },
-    {
-        "name": "Vincent",
-        "team": "shadow",
-        "image": "vincent.png" 
-    },
-    {
-        "name": "Loup garou",
-        "team": "shadow",
-        "image": "loup-garou.png" 
-    },
-    {
-        "name": "Liche",
-        "team": "shadow",
-        "image": "liche.png" 
-    },
-    {
-        "name": "Lambdadelta",
-        "team": "shadow",
-        "image": "lambdadelta.png" 
-    },
-    {
-        "name": "Lonove",
-        "team": "shadow",
-        "image": "lonove.png" 
-    },
-    {
-        "name": "Lain",
-        "team": "shadow",
-        "image": "lain.png" 
-    },
-    {
-        "name": "Lilith",
-        "team": "shadow",
-        "image": "lilith.png" 
-    },
-    {
-        "name": "Allie",
+        "name": "Agnes",
         "team": "neutral",
-        "image": "allie.png" 
-    },
-    {
-        "name": "Agnès",
-        "team": "neutral",
-        "image": "agnes.png" 
-    },
-    {
-        "name": "Alipheese",
-        "team": "neutral",
-        "image": "alipheese.png" 
+        "image": "agnes.png"
     },
     {
         "name": "Akemi Homura",
         "team": "neutral",
-        "image": "akemi-homura.png" 
+        "image": "akemi-homura.png"
+    },
+    {
+        "name": "Alipheese",
+        "team": "neutral",
+        "image": "alipheese.png"
+    },
+    {
+        "name": "Allie",
+        "team": "neutral",
+        "image": "allie.png"
+    },
+    {
+        "name": "Bb",
+        "team": "neutral",
+        "image": "bb.png"
+    },
+    {
+        "name": "Beatrice",
+        "team": "neutral",
+        "image": "beatrice.png"
     },
     {
         "name": "Bob",
         "team": "neutral",
-        "image": "bob.png" 
+        "image": "bob.png"
     },
     {
         "name": "Bryan",
         "team": "neutral",
-        "image": "bryan.png" 
-    },
-    {
-        "name": "Béatrice",
-        "team": "neutral",
-        "image": "beatrice.png" 
-    },
-    {
-        "name": "BB",
-        "team": "neutral",
-        "image": "bb.png"
+        "image": "bryan.png"
     },
     {
         "name": "Bucciarati",
@@ -205,53 +45,218 @@
         "image": "bucciarati.png"
     },
     {
-        "name": "Charles",
-        "team": "neutral",
-        "image": "charles.png" 
-    },
-    {
         "name": "Catherine",
         "team": "neutral",
-        "image": "catherine.png" 
+        "image": "catherine.png"
     },
     {
-        "name": "Céleste",
+        "name": "Celeste",
         "team": "neutral",
-        "image": "celeste.png" 
+        "image": "celeste.png"
     },
     {
-        "name": "Claude",
+        "name": "Charles",
         "team": "neutral",
-        "image": "claude.png" 
+        "image": "charles.png"
     },
     {
         "name": "Ciri",
         "team": "neutral",
-        "image": "ciri.png" 
+        "image": "ciri.png"
+    },
+    {
+        "name": "Claude",
+        "team": "neutral",
+        "image": "claude.png"
     },
     {
         "name": "Daniel",
         "team": "neutral",
-        "image": "daniel.png" 
+        "image": "daniel.png"
     },
     {
         "name": "David",
         "team": "neutral",
-        "image": "david.png" 
+        "image": "david.png"
     },
     {
-        "name": "Dio",
+        "name": "Default",
         "team": "neutral",
-        "image": "dio.png" 
-    },
-    {
-        "name": "Dlanor",
-        "team": "neutral",
-        "image": "dlanor.png" 
+        "image": "default.png"
     },
     {
         "name": "Diana",
         "team": "neutral",
-        "image": "diana.png" 
+        "image": "diana.png"
+    },
+    {
+        "name": "Dio",
+        "team": "neutral",
+        "image": "dio.png"
+    },
+    {
+        "name": "Dlanor",
+        "team": "neutral",
+        "image": "dlanor.png"
+    },
+    {
+        "name": "Elincia",
+        "team": "hunter",
+        "image": "elincia.png"
+    },
+    {
+        "name": "Ellen",
+        "team": "hunter",
+        "image": "ellen.png"
+    },
+    {
+        "name": "Emi",
+        "team": "hunter",
+        "image": "emi.png"
+    },
+    {
+        "name": "Emma",
+        "team": "hunter",
+        "image": "emma.png"
+    },
+    {
+        "name": "Eva",
+        "team": "hunter",
+        "image": "eva.png"
+    },
+    {
+        "name": "Faye",
+        "team": "hunter",
+        "image": "faye.png"
+    },
+    {
+        "name": "Fiora",
+        "team": "hunter",
+        "image": "fiora.png"
+    },
+    {
+        "name": "Fosphophilite",
+        "team": "hunter",
+        "image": "fosphophilite.png"
+    },
+    {
+        "name": "Franklin",
+        "team": "hunter",
+        "image": "franklin.png"
+    },
+    {
+        "name": "Fu Ka",
+        "team": "hunter",
+        "image": "fu-ka.png"
+    },
+    {
+        "name": "Georges",
+        "team": "hunter",
+        "image": "georges.png"
+    },
+    {
+        "name": "Geralt",
+        "team": "hunter",
+        "image": "geralt.png"
+    },
+    {
+        "name": "Ginoza",
+        "team": "hunter",
+        "image": "ginoza.png"
+    },
+    {
+        "name": "Gregor",
+        "team": "hunter",
+        "image": "gregor.png"
+    },
+    {
+        "name": "Guts",
+        "team": "hunter",
+        "image": "guts.png"
+    },
+    {
+        "name": "Lain",
+        "team": "shadow",
+        "image": "lain.png"
+    },
+    {
+        "name": "Lambdadelta",
+        "team": "shadow",
+        "image": "lambdadelta.png"
+    },
+    {
+        "name": "Liche",
+        "team": "shadow",
+        "image": "liche.png"
+    },
+    {
+        "name": "Lilith",
+        "team": "shadow",
+        "image": "lilith.png"
+    },
+    {
+        "name": "Lonove",
+        "team": "shadow",
+        "image": "lonove.png"
+    },
+    {
+        "name": "Loup Garou",
+        "team": "shadow",
+        "image": "loup-garou.png"
+    },
+    {
+        "name": "Maria",
+        "team": "shadow",
+        "image": "maria.png"
+    },
+    {
+        "name": "Masochiste",
+        "team": "shadow",
+        "image": "masochiste.png"
+    },
+    {
+        "name": "Metamorphe",
+        "team": "shadow",
+        "image": "metamorphe.png"
+    },
+    {
+        "name": "Momie",
+        "team": "shadow",
+        "image": "momie.png"
+    },
+    {
+        "name": "Monokuma",
+        "team": "shadow",
+        "image": "monokuma.png"
+    },
+    {
+        "name": "Valkyrie",
+        "team": "shadow",
+        "image": "valkyrie.png"
+    },
+    {
+        "name": "Vampire",
+        "team": "shadow",
+        "image": "vampire.png"
+    },
+    {
+        "name": "Vanilla Ice",
+        "team": "shadow",
+        "image": "vanilla-ice.png"
+    },
+    {
+        "name": "Velvet",
+        "team": "shadow",
+        "image": "velvet.png"
+    },
+    {
+        "name": "Vincent",
+        "team": "shadow",
+        "image": "vincent.png"
+    },
+    {
+        "name": "Vouivre",
+        "team": "shadow",
+        "image": "vouivre.png"
     }
 ]
