@@ -1,15 +1,21 @@
 scores.txt
 
-Geralt : 2:0
-Dlanor: 0:2
-Masochiste : 0:1
-Lonove : 1:1
-Dio : 0:1
-Vouivre : 0:2
-Guts : 1:1
-Beatrice : 0:1
-Fiora : 0:2
-Diana : 1:0
-Eva : 0:1
-Lambdadelta : 1:0
 Alipheese : 1:0
+Akemi Homura : 2:0
+Beatrice : 1:1
+Claude : 0:2
+Dlanor: 0:3
+Dio : 0:1
+Diana : 1:0
+Eva : 0:2
+Elincia : 1:0
+Fosphophillite : 1:1
+Fiora : 0:2
+Geralt : 2:2
+Guts : 1:1
+Lonove : 1:1
+Lambdadelta : 1:0
+Masochiste : 1:1
+Monokuma : 2:0
+Vouivre : 0:2
+Vanilla Ice : 1:1
