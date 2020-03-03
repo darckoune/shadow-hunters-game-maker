@@ -3,7 +3,7 @@ const cardsFile = 'public/cards/cards.json';
 const fs = require('fs');
 const path = require('path');
 
-const files = fs.readdirSync(path.join(__dirname, imagesFolder));
+const files = fs.readdirSync(path.join(__dirname, imagesFolder)).filter(file => file !== 'default.png');
 
 const cards = files.map(file => {
     const name = file.split('.')[0];

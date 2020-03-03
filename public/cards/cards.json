@@ -95,11 +95,6 @@
         "image": "decim.png"
     },
     {
-        "name": "Default",
-        "team": "neutral",
-        "image": "default.png"
-    },
-    {
         "name": "Diana",
         "team": "neutral",
         "image": "diana.png"
