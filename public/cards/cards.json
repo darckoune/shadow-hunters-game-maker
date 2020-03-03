@@ -20,6 +20,11 @@
         "image": "elincia.png" 
     },
     {
+        "name": "Emma",
+        "team": "hunter",
+        "image": "emma.png" 
+    },
+    {
         "name": "Franklin",
         "team": "hunter",
         "image": "franklin.png" 
@@ -40,6 +45,11 @@
         "image": "faye.png" 
     },
     {
+        "name": "Fosphophilite",
+        "team": "hunter",
+        "image": "fosphophilite.png" 
+    },
+    {
         "name": "Georges",
         "team": "hunter",
         "image": "georges.png" 
@@ -58,6 +68,11 @@
         "name": "Geralt",
         "team": "hunter",
         "image": "geralt.png" 
+    },
+    {
+        "name": "Ginoza",
+        "team": "hunter",
+        "image": "ginoza.png" 
     },
     {
         "name": "Metamorphe",
@@ -98,6 +113,21 @@
         "name": "Vouivre",
         "team": "shadow",
         "image": "vouivre.png" 
+    },
+    {
+        "name": "Vanilla Ice",
+        "team": "shadow",
+        "image": "vanilla-ice.png" 
+    },
+    {
+        "name": "Velvet",
+        "team": "shadow",
+        "image": "velvet.png" 
+    },
+    {
+        "name": "Vincent",
+        "team": "shadow",
+        "image": "vincent.png" 
     },
     {
         "name": "Loup garou",
@@ -170,6 +200,11 @@
         "image": "bb.png"
     },
     {
+        "name": "Bucciarati",
+        "team": "neutral",
+        "image": "bucciarati.png"
+    },
+    {
         "name": "Charles",
         "team": "neutral",
         "image": "charles.png" 
@@ -188,6 +223,11 @@
         "name": "Claude",
         "team": "neutral",
         "image": "claude.png" 
+    },
+    {
+        "name": "Ciri",
+        "team": "neutral",
+        "image": "ciri.png" 
     },
     {
         "name": "Daniel",
