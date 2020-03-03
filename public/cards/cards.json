@@ -20,6 +20,16 @@
         "image": "allie.png"
     },
     {
+        "name": "Asuka",
+        "team": "neutral",
+        "image": "asuka.png"
+    },
+    {
+        "name": "Batou",
+        "team": "neutral",
+        "image": "batou.png"
+    },
+    {
         "name": "Bb",
         "team": "neutral",
         "image": "bb.png"
@@ -80,6 +90,11 @@
         "image": "david.png"
     },
     {
+        "name": "Decim",
+        "team": "neutral",
+        "image": "decim.png"
+    },
+    {
         "name": "Default",
         "team": "neutral",
         "image": "default.png"
@@ -125,6 +140,11 @@
         "image": "eva.png"
     },
     {
+        "name": "Faust",
+        "team": "hunter",
+        "image": "faust.png"
+    },
+    {
         "name": "Faye",
         "team": "hunter",
         "image": "faye.png"
@@ -135,9 +155,9 @@
         "image": "fiora.png"
     },
     {
-        "name": "Fosphophilite",
+        "name": "Fosphophillite",
         "team": "hunter",
-        "image": "fosphophilite.png"
+        "image": "fosphophillite.png"
     },
     {
         "name": "Franklin",
@@ -163,6 +183,11 @@
         "name": "Ginoza",
         "team": "hunter",
         "image": "ginoza.png"
+    },
+    {
+        "name": "Gintoki",
+        "team": "hunter",
+        "image": "gintoki.png"
     },
     {
         "name": "Gregor",
@@ -203,6 +228,11 @@
         "name": "Loup Garou",
         "team": "shadow",
         "image": "loup-garou.png"
+    },
+    {
+        "name": "Major",
+        "team": "shadow",
+        "image": "major.png"
     },
     {
         "name": "Maria",
