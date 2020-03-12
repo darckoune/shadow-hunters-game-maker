@@ -60,11 +60,6 @@
         "image": "bucciarati.png"
     },
     {
-        "name": "Batou",
-        "team": "neutral",
-        "image": "batou.png"
-    },
-    {
         "name": "Catherine",
         "team": "neutral",
         "image": "catherine.png"
@@ -93,6 +88,11 @@
         "name": "Daniel",
         "team": "neutral",
         "image": "daniel.png"
+    },
+    {
+        "name": "Darkness",
+        "team": "neutral",
+        "image": "darkness.png"
     },
     {
         "name": "David",
@@ -125,9 +125,9 @@
         "image": "doppio.png"
     },
     {
-        "name": "Darkness",
-        "team": "neutral",
-        "image": "darkness.png"
+        "name": "Edgeworth",
+        "team": "hunter",
+        "image": "edgeworth.png"
     },
     {
         "name": "Elincia",
@@ -153,11 +153,6 @@
         "name": "Eva",
         "team": "hunter",
         "image": "eva.png"
-    },
-    {
-        "name": "Edgeworth",
-        "team": "hunter",
-        "image": "edgeworth.png"
     },
     {
         "name": "Faust",
@@ -210,6 +205,11 @@
         "image": "gintoki.png"
     },
     {
+        "name": "Giorno",
+        "team": "hunter",
+        "image": "giorno.png"
+    },
+    {
         "name": "Gregor",
         "team": "hunter",
         "image": "gregor.png"
@@ -218,11 +218,6 @@
         "name": "Guts",
         "team": "hunter",
         "image": "guts.png"
-    },
-    {
-        "name": "Giorno",
-        "team": "hunter",
-        "image": "giorno.png"
     },
     {
         "name": "Lain",
