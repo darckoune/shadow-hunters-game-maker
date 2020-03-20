@@ -1,21 +1,26 @@
 scores.txt
 
-Alipheese : 1:0
-Akemi Homura : 2:0
-Beatrice : 1:1
-Claude : 0:2
+Alipheese : 2:0
+Akemi Homura : 2:1
+Arash : 1:1
+Beatrice : 1:2
+Batou: 1:0
+Buccalati: 0:1
+Claude : 0:3
 Dlanor: 0:3
 Dio : 0:1
-Diana : 1:0
-Eva : 0:2
-Elincia : 1:0
-Fosphophillite : 1:1
-Fiora : 0:2
+Diana : 2:0
+Eva : 0:3
+Elincia : 1:1
+Fosphophillite : 1:2
+Fiora : 1:2
 Geralt : 2:2
 Guts : 1:1
-Lonove : 1:1
-Lambdadelta : 1:0
+Giorno : 1:1
+Lonove : 1:2
+Lambdadelta : 2:1
 Masochiste : 1:1
 Monokuma : 2:0
 Vouivre : 0:2
 Vanilla Ice : 1:1
+Vincent: 1:1
