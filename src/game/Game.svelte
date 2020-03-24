@@ -115,6 +115,10 @@
     .error {
         color: rgb(153, 13, 13);
     }
+
+    .limit-width {
+        max-width: 500px;
+    }
 </style>
 
 <h1>
@@ -152,5 +156,7 @@
 {/if}
 
 {#if card}
-    <Card {card} />
+    <div class="limit-width">
+        <Card {card} />
+    </div>
 {/if}

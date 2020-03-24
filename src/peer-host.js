@@ -78,9 +78,11 @@ export class PeerHost {
 
     shuffleArray(array) {
         const a = [...array];
-        for (let i = a.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [a[i], a[j]] = [a[j], a[i]];
+        for (let k = 0; k < 1000; k++) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
         }
         return a;
     }
