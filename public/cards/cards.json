@@ -275,6 +275,11 @@
         "image": "momie.png"
     },
     {
+        "name": "Monika",
+        "team": "shadow",
+        "image": "monika.png"
+    },
+    {
         "name": "Monokuma",
         "team": "shadow",
         "image": "monokuma.png"
