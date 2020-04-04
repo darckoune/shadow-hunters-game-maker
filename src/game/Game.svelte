@@ -4,6 +4,7 @@
 
     import Peer from 'peerjs';
     import { afterUpdate } from 'svelte';
+    import { removeNull } from '../utils.js'
 
     export let hostId;
 
@@ -68,7 +69,16 @@
 
     function createPeer() {
         return new Promise((resolve) => {
-            const newPeer = new Peer();
+            const urlParams = new URLSearchParams(window.location.search);
+            const peerConfig = {
+                host: urlParams.get('brokingHost'),
+                port: urlParams.get('brokingPort'),
+                path: urlParams.get('brokingPath'),
+                key: urlParams.get('brokingKey')
+            };
+            removeNull(peerConfig);
+            console.log(peerConfig);
+            const newPeer = new Peer(peerConfig);
             newPeer.on('open', () => {
                 resolve(newPeer);
             })

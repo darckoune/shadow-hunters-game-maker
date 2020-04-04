@@ -2,10 +2,12 @@
 	import Host from './host/Host.svelte';
 	import Game from './game/Game.svelte';
 
-	let hostId = null;
+    let hostId = null;
 	if (window.location.search) {
-		const h = window.location.search.split('=')[1]
-		if (h) hostId = h;
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('game')) {
+            hostId = urlParams.get('game');
+        }
 	}
 
 	let gameCreator = false;

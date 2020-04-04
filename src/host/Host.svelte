@@ -8,9 +8,20 @@
     let hostId;
     let players = [];
 
+    let brokingHost;
+    let brokingPort;
+    let brokingPath;
+    let brokingKey;
+
 
     function createGameHost() {
-        host.start().then(id => { 
+        host.start({
+            debug: 2,
+            host: brokingHost,
+            port: brokingPort,
+            path: brokingPath,
+            key: brokingKey
+        }).then(id => { 
             hostId = id;
             dispatch('createdHost', id);
         });
@@ -32,7 +43,19 @@
         host.removePlayer(player);
     }
 
-    $: sharableLink = window.location.origin + '/?game=' + hostId;
+    function generateUrlParam(key, value) {
+        if (value) {
+            return  `&${key}=${value}`; 
+        }
+        return '';
+    }
+
+    $: sharableLink = window.location.origin 
+        + '/?game=' + hostId 
+        + generateUrlParam('brokingHost', brokingHost) 
+        + generateUrlParam('brokingPort', brokingPort) 
+        + generateUrlParam('brokingPath', brokingPath) 
+        + generateUrlParam('brokingKey', brokingKey);
 </script>
 
 <style>
@@ -46,6 +69,15 @@
 
 {#if !hostId}
     <button on:click={createGameHost}>Create a host server and start game</button>
+    <h2>Broking server options</h2>
+    <label>Host</label>
+    <input bind:value={brokingHost} />
+    <label>Port</label>
+    <input bind:value={brokingPort}/>
+    <label>Path</label>
+    <input bind:value={brokingPath}/>
+    <label>Key</label>
+    <input bind:value={brokingKey}/>
 {:else}
     <button on:click={restartGame}>Restart the game</button>
     <p>Share this link to the players : <a href={sharableLink} target="_blank">{sharableLink}</a></p>

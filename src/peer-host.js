@@ -1,5 +1,6 @@
 import Peer from 'peerjs';
 import { BehaviorSubject } from 'rxjs';
+import { removeNull } from './utils';
 
 export class PeerHost {
     constructor() {
@@ -7,11 +8,15 @@ export class PeerHost {
         this.connections = [];
         this.players = [];
         this.players$ = new BehaviorSubject(this.players);
+        setInterval(() => {
+            this.pingAll();
+        }, 1000)
     }
 
-    start() {
+    start(peerConfig) {
         return new Promise((resolve, reject) => {
-            this.peer = new Peer();
+            removeNull(peerConfig);
+            this.peer = new Peer(peerConfig);
             this.peer.on('open', function(id) {
                 resolve(id);
             });
@@ -140,6 +145,14 @@ export class PeerHost {
             })
         })
         this.players$.next(this.players);
+    }
+
+    pingAll() {
+        this.connections.forEach(conn => {
+            conn.send({
+                type: 'ping'
+            });
+        })
     }
 
     getSendablePlayers() {
