@@ -89,8 +89,8 @@
             {#each players as player}
                 <tr>
                     <td>{player.name}</td>
-                    <td>
-                        <i class="gg-close" on:click={() => removePlayer(player)}></i>
+                    <td on:click={() => removePlayer(player)}>
+                        <i class="gg-close"></i>
                     </td>
                 </tr> 
             {/each}
