@@ -5,6 +5,11 @@
         "image": "agnes.jpg"
     },
     {
+        "name": "Airy",
+        "team": "neutral",
+        "image": "airy.jpg"
+    },
+    {
         "name": "Akemi Homura",
         "team": "neutral",
         "image": "akemi-homura.jpg"

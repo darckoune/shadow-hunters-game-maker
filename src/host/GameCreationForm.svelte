@@ -11,6 +11,7 @@
     let cards = [];
     let playableCards = [];
     let showCards = true;
+    let preventReplayingSameCards = true;
 
     cardsStore.subscribe(c => {
         cards = c;
@@ -36,9 +37,11 @@
 
     function submit() {
         dispatch('gameCreated', {
-            shadowHunters: shadowHunters,
-            cards: playableCards
+            shadowHunters,
+            cards: playableCards,
+            preventReplayingSameCards
         });
+        
     }
 
     function toggleCard(card) {
@@ -85,6 +88,11 @@
     <div>
         <label class="inline">Neutral count</label>
         <span>{neutrals}</span>
+    </div>
+
+    <div>
+        <label class="inline">Ne pas rejouer les mêmes personnages 2 fois de suite</label>
+        <input type="checkbox" bind:checked={preventReplayingSameCards}>
     </div>
 
     <button type="button" on:click={submit}>Start game !</button>

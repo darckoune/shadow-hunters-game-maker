@@ -10,7 +10,8 @@ export class PeerHost {
         this.players$ = new BehaviorSubject(this.players);
         setInterval(() => {
             this.pingAll();
-        }, 1000)
+        }, 1000);
+        this.previouslyPlayedCards = [];
     }
 
     start(peerConfig) {
@@ -47,7 +48,15 @@ export class PeerHost {
 
     startGame(gameConfig) {
         console.log('should start game with', gameConfig);
-        const cards = gameConfig.cards;
+        let cards = [...gameConfig.cards];
+
+        if (gameConfig.preventReplayingSameCards) {
+            const previouslyPlayedCardsNames = this.previouslyPlayedCards.map(c => c.name);
+            console.log(previouslyPlayedCardsNames);
+            cards = cards.filter(c => !previouslyPlayedCardsNames.includes(c.name));
+            console.log('using only cards', cards);
+        }
+
         const shuffledPlayers = this.shuffleArray(this.players);
 
         const shadows = shuffledPlayers.slice(0, gameConfig.shadowHunters);
@@ -77,6 +86,8 @@ export class PeerHost {
                 data: player.card
             });
         })
+
+        this.previouslyPlayedCards = this.players.map(p => p.card);
 
         console.log('players', this.players);
     }
