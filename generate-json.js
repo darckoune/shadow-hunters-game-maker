@@ -4,8 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 const files = fs.readdirSync(path.join(__dirname, imagesFolder)).filter(file => file !== 'default.webp');
+const images = files.filter(file => file.endsWith('.webp'));
 
-const cards = files.map(file => {
+const cards = images.map(file => {
     const name = file.split('.')[0];
     let team;
     switch (name.substr(0,1)) {
@@ -26,10 +27,12 @@ const cards = files.map(file => {
             team = 'shadow';
             break;
     }
+    const fallbacks = files.filter(file => !file.endsWith('.webp') && file.startsWith(name));
     return {
         name: name.split('-').map(word => capitalizeFirstLetter(word)).join(' '),
         team,
-        image: file
+        image: file,
+        imageFallbacks: fallbacks
     }
 })
 fs.writeFileSync(path.join(__dirname, cardsFile), JSON.stringify(cards, null, 4));
