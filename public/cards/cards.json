@@ -2,326 +2,545 @@
     {
         "name": "Agnes",
         "team": "neutral",
-        "image": "agnes.webp"
+        "image": "agnes.webp",
+        "imageFallbacks": [
+            "agnes.jpg"
+        ]
     },
     {
         "name": "Airy",
         "team": "neutral",
-        "image": "airy.webp"
+        "image": "airy.webp",
+        "imageFallbacks": [
+            "airy.jpg"
+        ]
     },
     {
         "name": "Akemi Homura",
         "team": "neutral",
-        "image": "akemi-homura.webp"
+        "image": "akemi-homura.webp",
+        "imageFallbacks": [
+            "akemi-homura.jpg"
+        ]
     },
     {
         "name": "Alipheese",
         "team": "neutral",
-        "image": "alipheese.webp"
+        "image": "alipheese.webp",
+        "imageFallbacks": [
+            "alipheese.jpg"
+        ]
     },
     {
         "name": "Allie",
         "team": "neutral",
-        "image": "allie.webp"
+        "image": "allie.webp",
+        "imageFallbacks": [
+            "allie.jpg"
+        ]
+    },
+    {
+        "name": "Aqua",
+        "team": "neutral",
+        "image": "aqua.webp",
+        "imageFallbacks": [
+            "aqua.jpg"
+        ]
     },
     {
         "name": "Arash",
         "team": "neutral",
-        "image": "arash.webp"
+        "image": "arash.webp",
+        "imageFallbacks": [
+            "arash.jpg"
+        ]
     },
     {
         "name": "Asuka",
         "team": "neutral",
-        "image": "asuka.webp"
+        "image": "asuka.webp",
+        "imageFallbacks": [
+            "asuka.jpg"
+        ]
     },
     {
         "name": "Batou",
         "team": "neutral",
-        "image": "batou.webp"
+        "image": "batou.webp",
+        "imageFallbacks": [
+            "batou.jpg"
+        ]
     },
     {
         "name": "Bb",
         "team": "neutral",
-        "image": "bb.webp"
+        "image": "bb.webp",
+        "imageFallbacks": [
+            "bb.jpg"
+        ]
     },
     {
         "name": "Beatrice",
         "team": "neutral",
-        "image": "beatrice.webp"
+        "image": "beatrice.webp",
+        "imageFallbacks": [
+            "beatrice.jpg"
+        ]
     },
     {
         "name": "Bob",
         "team": "neutral",
-        "image": "bob.webp"
+        "image": "bob.webp",
+        "imageFallbacks": [
+            "bob.jpg"
+        ]
     },
     {
         "name": "Bryan",
         "team": "neutral",
-        "image": "bryan.webp"
+        "image": "bryan.webp",
+        "imageFallbacks": [
+            "bryan.jpg"
+        ]
     },
     {
         "name": "Bucciarati",
         "team": "neutral",
-        "image": "bucciarati.webp"
+        "image": "bucciarati.webp",
+        "imageFallbacks": [
+            "bucciarati.jpg"
+        ]
     },
     {
         "name": "Catherine",
         "team": "neutral",
-        "image": "catherine.webp"
+        "image": "catherine.webp",
+        "imageFallbacks": [
+            "catherine.jpg"
+        ]
+    },
+    {
+        "name": "Cc",
+        "team": "neutral",
+        "image": "cc.webp",
+        "imageFallbacks": [
+            "cc.jpg"
+        ]
     },
     {
         "name": "Celeste",
         "team": "neutral",
-        "image": "celeste.webp"
+        "image": "celeste.webp",
+        "imageFallbacks": [
+            "celeste.jpg"
+        ]
     },
     {
         "name": "Charles",
         "team": "neutral",
-        "image": "charles.webp"
+        "image": "charles.webp",
+        "imageFallbacks": [
+            "charles.jpg"
+        ]
+    },
+    {
+        "name": "Chika",
+        "team": "neutral",
+        "image": "chika.webp",
+        "imageFallbacks": [
+            "chika.jpg"
+        ]
     },
     {
         "name": "Ciri",
         "team": "neutral",
-        "image": "ciri.webp"
+        "image": "ciri.webp",
+        "imageFallbacks": [
+            "ciri.jpg"
+        ]
     },
     {
         "name": "Claude",
         "team": "neutral",
-        "image": "claude.webp"
+        "image": "claude.webp",
+        "imageFallbacks": [
+            "claude.jpg"
+        ]
     },
     {
         "name": "Daniel",
         "team": "neutral",
-        "image": "daniel.webp"
+        "image": "daniel.webp",
+        "imageFallbacks": [
+            "daniel.jpg"
+        ]
     },
     {
         "name": "Darkness",
         "team": "neutral",
-        "image": "darkness.webp"
+        "image": "darkness.webp",
+        "imageFallbacks": [
+            "darkness.jpg"
+        ]
     },
     {
         "name": "David",
         "team": "neutral",
-        "image": "david.webp"
+        "image": "david.webp",
+        "imageFallbacks": [
+            "david.jpg"
+        ]
     },
     {
         "name": "Decim",
         "team": "neutral",
-        "image": "decim.webp"
+        "image": "decim.webp",
+        "imageFallbacks": [
+            "decim.jpg"
+        ]
     },
     {
         "name": "Diana",
         "team": "neutral",
-        "image": "diana.webp"
+        "image": "diana.webp",
+        "imageFallbacks": [
+            "diana.jpg"
+        ]
     },
     {
         "name": "Dio",
         "team": "neutral",
-        "image": "dio.webp"
+        "image": "dio.webp",
+        "imageFallbacks": [
+            "dio.jpg"
+        ]
     },
     {
         "name": "Dlanor",
         "team": "neutral",
-        "image": "dlanor.webp"
+        "image": "dlanor.webp",
+        "imageFallbacks": [
+            "dlanor.jpg"
+        ]
     },
     {
         "name": "Doppio",
         "team": "neutral",
-        "image": "doppio.webp"
+        "image": "doppio.webp",
+        "imageFallbacks": [
+            "doppio.jpg"
+        ]
     },
     {
         "name": "Edgeworth",
         "team": "hunter",
-        "image": "edgeworth.webp"
+        "image": "edgeworth.webp",
+        "imageFallbacks": [
+            "edgeworth.jpg"
+        ]
     },
     {
         "name": "Elincia",
         "team": "hunter",
-        "image": "elincia.webp"
+        "image": "elincia.webp",
+        "imageFallbacks": [
+            "elincia.jpg"
+        ]
     },
     {
         "name": "Ellen",
         "team": "hunter",
-        "image": "ellen.webp"
+        "image": "ellen.webp",
+        "imageFallbacks": [
+            "ellen.jpg"
+        ]
     },
     {
         "name": "Emi",
         "team": "hunter",
-        "image": "emi.webp"
+        "image": "emi.webp",
+        "imageFallbacks": [
+            "emi.jpg"
+        ]
     },
     {
         "name": "Emma",
         "team": "hunter",
-        "image": "emma.webp"
+        "image": "emma.webp",
+        "imageFallbacks": [
+            "emma.jpg"
+        ]
     },
     {
         "name": "Eva",
         "team": "hunter",
-        "image": "eva.webp"
+        "image": "eva.webp",
+        "imageFallbacks": [
+            "eva.jpg"
+        ]
     },
     {
         "name": "Faust",
         "team": "hunter",
-        "image": "faust.webp"
+        "image": "faust.webp",
+        "imageFallbacks": [
+            "faust.jpg"
+        ]
     },
     {
         "name": "Faye",
         "team": "hunter",
-        "image": "faye.webp"
+        "image": "faye.webp",
+        "imageFallbacks": [
+            "faye.jpg"
+        ]
     },
     {
         "name": "Fiora",
         "team": "hunter",
-        "image": "fiora.webp"
+        "image": "fiora.webp",
+        "imageFallbacks": [
+            "fiora.jpg"
+        ]
     },
     {
         "name": "Fosphophillite",
         "team": "hunter",
-        "image": "fosphophillite.webp"
+        "image": "fosphophillite.webp",
+        "imageFallbacks": [
+            "fosphophillite.jpg"
+        ]
     },
     {
         "name": "Franklin",
         "team": "hunter",
-        "image": "franklin.webp"
+        "image": "franklin.webp",
+        "imageFallbacks": [
+            "franklin.jpg"
+        ]
     },
     {
         "name": "Fu Ka",
         "team": "hunter",
-        "image": "fu-ka.webp"
+        "image": "fu-ka.webp",
+        "imageFallbacks": [
+            "fu-ka.jpg"
+        ]
     },
     {
         "name": "Georges",
         "team": "hunter",
-        "image": "georges.webp"
+        "image": "georges.webp",
+        "imageFallbacks": [
+            "georges.jpg"
+        ]
     },
     {
         "name": "Geralt",
         "team": "hunter",
-        "image": "geralt.webp"
+        "image": "geralt.webp",
+        "imageFallbacks": [
+            "geralt.jpg"
+        ]
     },
     {
         "name": "Ginoza",
         "team": "hunter",
-        "image": "ginoza.webp"
+        "image": "ginoza.webp",
+        "imageFallbacks": [
+            "ginoza.jpg"
+        ]
     },
     {
         "name": "Gintoki",
         "team": "hunter",
-        "image": "gintoki.webp"
+        "image": "gintoki.webp",
+        "imageFallbacks": [
+            "gintoki.jpg"
+        ]
     },
     {
         "name": "Giorno",
         "team": "hunter",
-        "image": "giorno.webp"
+        "image": "giorno.webp",
+        "imageFallbacks": [
+            "giorno.jpg"
+        ]
     },
     {
         "name": "Gregor",
         "team": "hunter",
-        "image": "gregor.webp"
+        "image": "gregor.webp",
+        "imageFallbacks": [
+            "gregor.jpg"
+        ]
     },
     {
         "name": "Guts",
         "team": "hunter",
-        "image": "guts.webp"
+        "image": "guts.webp",
+        "imageFallbacks": [
+            "guts.jpg"
+        ]
     },
     {
         "name": "Lain",
         "team": "shadow",
-        "image": "lain.webp"
+        "image": "lain.webp",
+        "imageFallbacks": [
+            "lain.jpg"
+        ]
     },
     {
         "name": "Lambdadelta",
         "team": "shadow",
-        "image": "lambdadelta.webp"
+        "image": "lambdadelta.webp",
+        "imageFallbacks": [
+            "lambdadelta.jpg"
+        ]
     },
     {
         "name": "Liche",
         "team": "shadow",
-        "image": "liche.webp"
+        "image": "liche.webp",
+        "imageFallbacks": [
+            "liche.jpg"
+        ]
     },
     {
         "name": "Lilith",
         "team": "shadow",
-        "image": "lilith.webp"
+        "image": "lilith.webp",
+        "imageFallbacks": [
+            "lilith.jpg"
+        ]
     },
     {
         "name": "Lonove",
         "team": "shadow",
-        "image": "lonove.webp"
+        "image": "lonove.webp",
+        "imageFallbacks": [
+            "lonove.jpg"
+        ]
     },
     {
         "name": "Loup Garou",
         "team": "shadow",
-        "image": "loup-garou.webp"
+        "image": "loup-garou.webp",
+        "imageFallbacks": [
+            "loup-garou.jpg"
+        ]
     },
     {
         "name": "Major",
         "team": "shadow",
-        "image": "major.webp"
+        "image": "major.webp",
+        "imageFallbacks": [
+            "major.jpg"
+        ]
     },
     {
         "name": "Maria",
         "team": "shadow",
-        "image": "maria.webp"
+        "image": "maria.webp",
+        "imageFallbacks": [
+            "maria.jpg"
+        ]
     },
     {
         "name": "Masochiste",
         "team": "shadow",
-        "image": "masochiste.webp"
+        "image": "masochiste.webp",
+        "imageFallbacks": [
+            "masochiste.jpg"
+        ]
     },
     {
         "name": "Metamorphe",
         "team": "shadow",
-        "image": "metamorphe.webp"
+        "image": "metamorphe.webp",
+        "imageFallbacks": [
+            "metamorphe.jpg"
+        ]
     },
     {
         "name": "Momie",
         "team": "shadow",
-        "image": "momie.webp"
+        "image": "momie.webp",
+        "imageFallbacks": [
+            "momie.jpg"
+        ]
     },
     {
         "name": "Monika",
         "team": "shadow",
-        "image": "monika.webp"
+        "image": "monika.webp",
+        "imageFallbacks": [
+            "monika.jpg"
+        ]
     },
     {
         "name": "Monokuma",
         "team": "shadow",
-        "image": "monokuma.webp"
+        "image": "monokuma.webp",
+        "imageFallbacks": [
+            "monokuma.jpg"
+        ]
     },
     {
         "name": "Muzan",
         "team": "shadow",
-        "image": "muzan.webp"
+        "image": "muzan.webp",
+        "imageFallbacks": [
+            "muzan.jpg"
+        ]
     },
     {
         "name": "Valkyrie",
         "team": "shadow",
-        "image": "valkyrie.webp"
+        "image": "valkyrie.webp",
+        "imageFallbacks": [
+            "valkyrie.jpg"
+        ]
     },
     {
         "name": "Vampire",
         "team": "shadow",
-        "image": "vampire.webp"
+        "image": "vampire.webp",
+        "imageFallbacks": [
+            "vampire.jpg"
+        ]
     },
     {
         "name": "Vanilla Ice",
         "team": "shadow",
-        "image": "vanilla-ice.webp"
+        "image": "vanilla-ice.webp",
+        "imageFallbacks": [
+            "vanilla-ice.jpg"
+        ]
     },
     {
         "name": "Velvet",
         "team": "shadow",
-        "image": "velvet.webp"
+        "image": "velvet.webp",
+        "imageFallbacks": [
+            "velvet.jpg"
+        ]
     },
     {
         "name": "Vincent",
         "team": "shadow",
-        "image": "vincent.webp"
+        "image": "vincent.webp",
+        "imageFallbacks": [
+            "vincent.jpg"
+        ]
     },
     {
         "name": "Vouivre",
         "team": "shadow",
-        "image": "vouivre.webp"
+        "image": "vouivre.webp",
+        "imageFallbacks": [
+            "vouivre.jpg"
+        ]
     }
 ]
