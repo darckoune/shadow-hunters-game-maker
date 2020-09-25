@@ -280,6 +280,14 @@
         ]
     },
     {
+        "name": "Fai",
+        "team": "hunter",
+        "image": "fai.webp",
+        "imageFallbacks": [
+            "fai.jpg"
+        ]
+    },
+    {
         "name": "Faust",
         "team": "hunter",
         "image": "faust.webp",
@@ -408,6 +416,14 @@
         ]
     },
     {
+        "name": "Light",
+        "team": "shadow",
+        "image": "light.webp",
+        "imageFallbacks": [
+            "light.jpg"
+        ]
+    },
+    {
         "name": "Lilith",
         "team": "shadow",
         "image": "lilith.webp",
@@ -525,6 +541,14 @@
         "image": "velvet.webp",
         "imageFallbacks": [
             "velvet.jpg"
+        ]
+    },
+    {
+        "name": "Vicious",
+        "team": "shadow",
+        "image": "vicious.webp",
+        "imageFallbacks": [
+            "vicious.jpg"
         ]
     },
     {
