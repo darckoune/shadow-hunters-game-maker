@@ -8,6 +8,14 @@
         ]
     },
     {
+        "name": "Aibo",
+        "team": "neutral",
+        "image": "aibo.webp",
+        "imageFallbacks": [
+            "aibo.jpg"
+        ]
+    },
+    {
         "name": "Airy",
         "team": "neutral",
         "image": "airy.webp",
