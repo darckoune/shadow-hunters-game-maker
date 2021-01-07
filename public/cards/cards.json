@@ -8,6 +8,14 @@
         ]
     },
     {
+        "name": "Aiba",
+        "team": "neutral",
+        "image": "aiba.webp",
+        "imageFallbacks": [
+            "aiba.jpg"
+        ]
+    },
+    {
         "name": "Aibo",
         "team": "neutral",
         "image": "aibo.webp",
@@ -565,6 +573,14 @@
         "image": "vincent.webp",
         "imageFallbacks": [
             "vincent.jpg"
+        ]
+    },
+    {
+        "name": "Virgilia",
+        "team": "shadow",
+        "image": "virgilia.webp",
+        "imageFallbacks": [
+            "virgilia.jpg"
         ]
     },
     {
