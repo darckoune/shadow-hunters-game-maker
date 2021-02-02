@@ -1,10 +1,12 @@
 const imagesFolder = 'public/cards/images';
+const themesFolder = 'public/cards/themes';
 const cardsFile = 'public/cards/cards.json';
 const fs = require('fs');
 const path = require('path');
 
 const files = fs.readdirSync(path.join(__dirname, imagesFolder)).filter(file => file !== 'default.webp');
 const images = files.filter(file => file.endsWith('.webp'));
+const themes =  fs.readdirSync(path.join(__dirname, themesFolder))
 
 const cards = images.map(file => {
     const name = file.split('.')[0];
@@ -28,11 +30,13 @@ const cards = images.map(file => {
             break;
     }
     const fallbacks = files.filter(file => !file.endsWith('.webp') && file.startsWith(name));
+    const theme = themes.find(t => t.startsWith(name));
     return {
         name: name.split('-').map(word => capitalizeFirstLetter(word)).join(' '),
         team,
         image: file,
-        imageFallbacks: fallbacks
+        imageFallbacks: fallbacks,
+        theme: theme ? theme : undefined
     }
 })
 fs.writeFileSync(path.join(__dirname, cardsFile), JSON.stringify(cards, null, 4));
