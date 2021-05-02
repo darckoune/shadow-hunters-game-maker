@@ -13,7 +13,8 @@
         "image": "aiba.webp",
         "imageFallbacks": [
             "aiba.jpg"
-        ]
+        ],
+        "theme": "aiba.mp3"
     },
     {
         "name": "Airy",
@@ -21,7 +22,8 @@
         "image": "airy.webp",
         "imageFallbacks": [
             "airy.jpg"
-        ]
+        ],
+        "theme": "airy.mp3"
     },
     {
         "name": "Akemi Homura",
@@ -29,7 +31,8 @@
         "image": "akemi-homura.webp",
         "imageFallbacks": [
             "akemi-homura.jpg"
-        ]
+        ],
+        "theme": "akemi-homura.mp3"
     },
     {
         "name": "Alipheese",
@@ -54,7 +57,8 @@
         "image": "aqua.webp",
         "imageFallbacks": [
             "aqua.jpg"
-        ]
+        ],
+        "theme": "aqua.mp3"
     },
     {
         "name": "Arash",
@@ -62,7 +66,8 @@
         "image": "arash.webp",
         "imageFallbacks": [
             "arash.jpg"
-        ]
+        ],
+        "theme": "arash.mp3"
     },
     {
         "name": "Asuka",
@@ -70,7 +75,8 @@
         "image": "asuka.webp",
         "imageFallbacks": [
             "asuka.jpg"
-        ]
+        ],
+        "theme": "asuka.mp3"
     },
     {
         "name": "Batou",
@@ -82,12 +88,22 @@
         "theme": "batou.mp3"
     },
     {
+        "name": "Battler",
+        "team": "neutral",
+        "image": "battler.webp",
+        "imageFallbacks": [
+            "battler.jpg"
+        ],
+        "theme": "battler.mp3"
+    },
+    {
         "name": "Bb",
         "team": "neutral",
         "image": "bb.webp",
         "imageFallbacks": [
             "bb.jpg"
-        ]
+        ],
+        "theme": "bb.mp3"
     },
     {
         "name": "Beatrice",
@@ -95,7 +111,8 @@
         "image": "beatrice.webp",
         "imageFallbacks": [
             "beatrice.jpg"
-        ]
+        ],
+        "theme": "beatrice.mp3"
     },
     {
         "name": "Bob",
@@ -119,7 +136,8 @@
         "image": "bucciarati.webp",
         "imageFallbacks": [
             "bucciarati.jpg"
-        ]
+        ],
+        "theme": "bucciarati.mp3"
     },
     {
         "name": "Catherine",
@@ -144,7 +162,8 @@
         "image": "celeste.webp",
         "imageFallbacks": [
             "celeste.jpg"
-        ]
+        ],
+        "theme": "celeste.mp3"
     },
     {
         "name": "Charles",
@@ -169,7 +188,8 @@
         "image": "ciri.webp",
         "imageFallbacks": [
             "ciri.jpg"
-        ]
+        ],
+        "theme": "ciri.mp3"
     },
     {
         "name": "Claude",
@@ -177,7 +197,8 @@
         "image": "claude.webp",
         "imageFallbacks": [
             "claude.jpg"
-        ]
+        ],
+        "theme": "claude.mp3"
     },
     {
         "name": "Daniel",
@@ -193,7 +214,8 @@
         "image": "darkness.webp",
         "imageFallbacks": [
             "darkness.jpg"
-        ]
+        ],
+        "theme": "darkness.mp3"
     },
     {
         "name": "David",
@@ -218,7 +240,8 @@
         "image": "diana.webp",
         "imageFallbacks": [
             "diana.jpg"
-        ]
+        ],
+        "theme": "diana.mp3"
     },
     {
         "name": "Dio",
@@ -226,7 +249,8 @@
         "image": "dio.webp",
         "imageFallbacks": [
             "dio.jpg"
-        ]
+        ],
+        "theme": "dio.mp3"
     },
     {
         "name": "Dlanor",
@@ -234,7 +258,8 @@
         "image": "dlanor.webp",
         "imageFallbacks": [
             "dlanor.jpg"
-        ]
+        ],
+        "theme": "dlanor.mp3"
     },
     {
         "name": "Doppio",
@@ -242,7 +267,8 @@
         "image": "doppio.webp",
         "imageFallbacks": [
             "doppio.jpg"
-        ]
+        ],
+        "theme": "doppio.mp3"
     },
     {
         "name": "Edgeworth",
@@ -259,7 +285,8 @@
         "image": "elincia.webp",
         "imageFallbacks": [
             "elincia.jpg"
-        ]
+        ],
+        "theme": "elincia.mp3"
     },
     {
         "name": "Ellen",
@@ -283,7 +310,17 @@
         "image": "emma.webp",
         "imageFallbacks": [
             "emma.jpg"
-        ]
+        ],
+        "theme": "emma.mp3"
+    },
+    {
+        "name": "Erika",
+        "team": "hunter",
+        "image": "erika.webp",
+        "imageFallbacks": [
+            "erika.jpg"
+        ],
+        "theme": "erika.mp3"
     },
     {
         "name": "Eva",
@@ -291,7 +328,8 @@
         "image": "eva.webp",
         "imageFallbacks": [
             "eva.jpg"
-        ]
+        ],
+        "theme": "eva.mp3"
     },
     {
         "name": "Fai",
@@ -335,7 +373,8 @@
         "image": "fosphophillite.webp",
         "imageFallbacks": [
             "fosphophillite.jpg"
-        ]
+        ],
+        "theme": "fosphophillite.mp3"
     },
     {
         "name": "Franklin",
@@ -385,7 +424,8 @@
         "image": "gintoki.webp",
         "imageFallbacks": [
             "gintoki.jpg"
-        ]
+        ],
+        "theme": "gintoki.mp3"
     },
     {
         "name": "Giorno",
@@ -410,7 +450,8 @@
         "image": "guts.webp",
         "imageFallbacks": [
             "guts.jpg"
-        ]
+        ],
+        "theme": "guts.mp3"
     },
     {
         "name": "Lain",
@@ -418,7 +459,8 @@
         "image": "lain.webp",
         "imageFallbacks": [
             "lain.jpg"
-        ]
+        ],
+        "theme": "lain.mp3"
     },
     {
         "name": "Lambdadelta",
@@ -426,7 +468,8 @@
         "image": "lambdadelta.webp",
         "imageFallbacks": [
             "lambdadelta.jpg"
-        ]
+        ],
+        "theme": "lambdadelta.mp3"
     },
     {
         "name": "Liche",
@@ -451,7 +494,8 @@
         "image": "lilith.webp",
         "imageFallbacks": [
             "lilith.jpg"
-        ]
+        ],
+        "theme": "lilith.mp3"
     },
     {
         "name": "Lonove",
@@ -459,7 +503,8 @@
         "image": "lonove.webp",
         "imageFallbacks": [
             "lonove.jpg"
-        ]
+        ],
+        "theme": "lonove.mp3"
     },
     {
         "name": "Loup Garou",
@@ -484,7 +529,8 @@
         "image": "maria.webp",
         "imageFallbacks": [
             "maria.jpg"
-        ]
+        ],
+        "theme": "maria.mp3"
     },
     {
         "name": "Masochiste",
@@ -525,7 +571,8 @@
         "image": "monokuma.webp",
         "imageFallbacks": [
             "monokuma.jpg"
-        ]
+        ],
+        "theme": "monokuma.mp3"
     },
     {
         "name": "Muzan",
@@ -533,7 +580,8 @@
         "image": "muzan.webp",
         "imageFallbacks": [
             "muzan.jpg"
-        ]
+        ],
+        "theme": "muzan.mp3"
     },
     {
         "name": "Valkyrie",
@@ -565,7 +613,8 @@
         "image": "velvet.webp",
         "imageFallbacks": [
             "velvet.jpg"
-        ]
+        ],
+        "theme": "velvet.mp3"
     },
     {
         "name": "Vicious",
@@ -582,7 +631,8 @@
         "image": "vincent.webp",
         "imageFallbacks": [
             "vincent.jpg"
-        ]
+        ],
+        "theme": "vincent.mp3"
     },
     {
         "name": "Virgilia",
@@ -590,7 +640,8 @@
         "image": "virgilia.webp",
         "imageFallbacks": [
             "virgilia.jpg"
-        ]
+        ],
+        "theme": "virgilia.mp3"
     },
     {
         "name": "Vouivre",
@@ -598,6 +649,7 @@
         "image": "vouivre.webp",
         "imageFallbacks": [
             "vouivre.jpg"
-        ]
+        ],
+        "theme": "vouivre.mp3"
     }
 ]
